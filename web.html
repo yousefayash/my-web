@@ -1,0 +1,249 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">موقعي</div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>مرحبًا بك في موقعي</h1>
+            <p>موقع بسيط بتصميم جميل وسهل الاستخدام</p>
+            <a href="#about" class="btn">تعرف علينا</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2>من نحن</h2>
+        <p>نحن فريق متخصص في تقديم أفضل الحلول التقنية لمساعدتك في بناء موقع أحلامك.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2>خدماتنا</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>تصميم المواقع</h3>
+                <p>نقوم بتصميم مواقع رائعة تلبي احتياجاتك.</p>
+            </div>
+            <div class="service-card">
+                <h3>التسويق الإلكتروني</h3>
+                <p>نساعدك على الوصول إلى جمهورك المستهدف.</p>
+            </div>
+            <div class="service-card">
+                <h3>تحليل البيانات</h3>
+                <p>نقدم حلول لتحليل بياناتك وتطوير عملك.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>موقع بتصميم أنيق</h1>
+            <p>اكتشف المزيد عن خدماتنا وأعمالنا المميزة</p>
+            <a href="#services" class="cta">ابدأ الآن</a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عنّا</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>عنّا</h2>
+            <p>نحن فريق مبدع يهدف إلى تقديم أفضل الحلول الرقمية بأحدث التقنيات.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>تطوير المواقع</h3>
+                    <p>إنشاء مواقع حديثة ومتكاملة حسب احتياجاتك.</p>
+                </div>
+                <div class="card">
+                    <h3>التسويق الرقمي</h3>
+                    <p>تحسين ظهورك عبر الإنترنت لجذب المزيد من العملاء.</p>
+                </div>
+                <div class="card">
+                    <h3>التصميم الإبداعي</h3>
+                    <p>تصميم شعارات ومحتوى مرئي يلفت الأنظار.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 جميع الحقوق محفوظة | تصميم بواسطة يوسف</p>
+        </div>
+    </footer>
+    <section id="services" class="section animate">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>تطوير المواقع</h3>
+                    <p>إنشاء مواقع حديثة ومتكاملة حسب احتياجاتك.</p>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+    <div class="popup" id="popup">
+    <div class="popup-content">
+        <button class="close-popup" onclick="closePopup()">×</button>
+        <h2>أهلاً بك!</h2>
+        <p>اشترك الآن للحصول على أحدث الأخبار والعروض.</p>
+    </div>
+</div>
+
+</body>
+</html>
+<body>
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="closeSidebar()">×</button>
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عنّا</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+    </div>
+                                                     
+    <button class="menu-btn" onclick="openSidebar()">Home</button>
+
+</body>
+
+
+<script>
+    function revealOnScroll() {
+         elements = document.querySelectorAll('.animate');
+        const windowHeight = window.innerHeight;
+
+        elements.forEach((el) => {
+           positionFromTop = el.getBoundingClientRect().top;
+            if (positionFromTop - windowHeight <= -100) {
+                el.classList.add('visible');
+            }
+        });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+</script>
+    <script>
+    function openSidebar() {
+        document.getElementById("sidebar").style.width = "250px";
+    }
+
+    function closeSidebar() {
+        document.getElementById("sidebar").style.width = "0";
+    }
+</script> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الجميل</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>مرحبًا بك في موقعي</h1>
+            <p>أفضل تصميم بألوان جميلة وتفاعلات مميزة</p>
+            <button class="cta-btn" onclick="scrollToSection('about')">ابدأ الآن</button>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عنّا</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>من نحن</h2>
+            <p>نحن نقدم خدمات تصميم وتطوير المواقع بتقنيات حديثة وتجربة مستخدم رائعة.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>تطوير المواقع</h3>
+                    <p>إنشاء مواقع عصرية تناسب احتياجاتك.</p>
+                </div>
+                <div class="card">
+                    <h3>التسويق الرقمي</h3>
+                    <p>تحقيق أفضل ظهور لعملك على الإنترنت.</p>
+                </div>
+                <div class="card">
+                    <h3>التصميم الإبداعي</h3>
+                    <p>ابتكار تصميمات مميزة وجذابة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="script.js">
+        // التمرير إلى قسم معين
+function scrollToSection(sectionId) {
+     section = document.getElementById(sectionId)
+    .scrollIntoView( behavior  );
+}
+
+// نافذة ترحيب (اختياري)
+setTimeout()  
+    ('مرحبًا بك في موقعي!')
+ 2000;
+
+    </script>
+</body>
+</html>
